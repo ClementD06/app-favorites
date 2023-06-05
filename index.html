@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Favorites Apps</title>
+</head>
+    <body>
+            <nav class="navbar">
+                <a href class="logo">Fav'Apps</a>
+                    <div class="nav_links">
+                        <ul>
+                            <li><a href="index.html"> Accueil</a></li>
+                            <li><a href="p1_winamax.html"> Winamax</a></li>
+                            <li><a href="p2_youtube.html"> Youtube</a></li>
+                            <li><a href="p3_netflix.html"> Netflix</a></li>
+                        </ul>
+                    </div>
+                <img src="menu-btn.png" alt="" class="menu_hamburger">
+            </nav>
+            <section class="section_1">
+                <div class="titre_home">
+                    <p>Découvrez mes 3 applications favorites !</p>
+                </div>
+            </section>
+            <section class="section_2">
+                <div class="app_choice">
+                    <div class="app_winamax">
+                        <img src="logo_wina.png" alt="" height="250">
+                        <button class="bouton_wina">Voir</button>
+                    </div>
+                    <div class="app_youtube">
+                        <img src="youtube-logo.png" alt="" height="300">
+                        <button class="bouton_yt">Voir</button>
+                    </div>
+                    <div class="app_netflix">
+                        <img src="logo_netflix.png" alt="" height="300">
+                        <button class="bouton_netflix">Voir</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section_3">     
+                    <p>© COPYRIGHT 2023 - Tous Droits Réservés - All Rights Reserved</p>
+            </section>   
+            <script>
+                const menuHamburger = document.querySelector(".menu_hamburger")
+                const navLinks = document.querySelector(".nav_links")
+        
+                menuHamburger.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu')
+                })
+            </script>
+    </body>
+</html>

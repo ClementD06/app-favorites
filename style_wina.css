@@ -1,0 +1,321 @@
+/* --------------- Réglages de base ----------------- */
+
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(./Poppins-Regular.ttf);
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+}
+
+/* --------------- Navbar page winamax ----------------- */
+
+.navbar_wina{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #020202;
+    align-items: center;
+    height: 100px;
+    z-index: 9999;
+}
+.navbar_wina a{
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar_wina .logo img{
+    width: 100px;
+    height: auto;
+    margin-top: 30px;
+}
+.navbar_wina .nav_links ul{
+    display: flex;
+}
+.navbar_wina .nav_links ul li{
+    margin: 0 1px;
+    background-color: rgb(30, 23, 23);
+    width: 170px;
+    height: 50px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#6e0404, #b71e1e);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar_wina{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav_links{
+        display: none;
+    }
+}
+.navbar_wina .menu_hamburger{
+    display: none;
+    width: 45px;
+    position: absolute;
+    top: 55px;
+    right: 35px;
+}
+@media screen and (max-width: 1100px) {
+    .navbar_wina{
+        padding: 0;
+    }
+    .navbar_wina .menu_hamburger{
+        display: block;
+    }
+    .nav_links{
+        position: absolute;
+        display: flex;
+        background-color: rgba(27, 26, 26, 0.804);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(4px);
+        margin-left: 100%;
+        
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar_wina .nav_links ul li{
+        margin: 5px 0px;
+        font-size: 1em;
+    }
+}
+.mobile-menu{
+    margin-left: 0;
+}
+
+
+/* ---------- Page Winamax -----------*/
+
+.section_1_wina{
+    width: 100%;
+    height: 12vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        .titre_wina{
+            width: 100vw;
+            height: 7vh;
+            background-color: #b5121b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #ffc514;
+        }
+
+/* ------------- Section 2 ---------------*/
+
+.section_2_wina{
+    width: 100vw;
+    height: 110vh;
+    background-color: #ca9b0d58;
+}
+    .app_wina{
+        width: 100vw;
+        height: 70vh;
+        background-color: rgb(42, 70, 39);
+        display: flex;
+    }
+        .app_winamax{
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+        .img_txt{
+            display: flex;
+            flex-direction: row;
+            width: 60vw;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            margin-right: 50px;
+        }
+        .img_txt p{
+            padding-left: 120px;
+            padding-right: 120px;
+            line-height: 1.7em;
+        }
+        .img_txt img{
+            width: 600px;
+            height: auto;
+        }
+    .see_others{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        .app_youtube{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .bouton_yt_winapage{
+                margin-top: 20px;
+                width: 100px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                border: 0;
+            }
+        .app_netflix{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .bouton_netflix_winapage{
+                margin-top: 20px;
+                width: 100px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                border: 0;
+            }
+
+@media screen and (max-width: 1600px) {
+    .section_2_wina .app_wina .img_txt{
+        font-size: 0.80em;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .section_2_wina .app_wina .img_txt p{
+        padding: 70px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .section_2_wina .app_wina img{
+        width: 90%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section_2_wina .app_wina{
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section_2_wina .app_wina .img_txt{
+        width: 95vw;
+        padding: 30px;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section_2_wina .app_wina .img_txt p{
+        width: 100vw;
+        padding: 30px;
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section_2_wina{
+        width: 100vw;
+        height: 140vh;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section_2_wina .app_wina img{
+        width: 150%;
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .section_2_wina .app_wina img{
+        width: 250px;
+        height: auto;
+       
+    }
+}
+@media screen and (max-width: 600px) {
+    .section_2_wina .see_others .app_youtube img{
+        width: 150px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section_2_wina .see_others .app_netflix img{
+        width: 150px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section_2_wina .app_wina .img_txt p{
+        width: 100vw;
+        padding: 0px;
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section_2_wina .app_wina img{
+        width: 80vw;
+        padding: 0px;
+        font-size: 0.7em;
+    }
+}
+/* ---------- Section 3 --------------*/
+
+.section_3_wina{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    .section_3_wina {
+
+        font-size: 0.65em;
+    }
+}
+/*.see_others{
+    width: 100vw;
+    height: 20vh;
+    background-color: violet;
+}

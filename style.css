@@ -1,0 +1,200 @@
+/* --------------- Réglages de base ----------------- */
+
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(./Poppins-Regular.ttf);
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+}
+
+/* --------------- Navbar ----------------- */
+
+.navbar{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    align-items: center;
+    height: 100px;
+    z-index: 9999;
+}
+.navbar a{
+    color: white;
+}
+.navbar .logo{
+    font-size: 3em;
+    font-weight: bold;
+}
+.navbar .nav_links ul{
+    display: flex;
+}
+.navbar .nav_links ul li{
+    margin: 0 25px;
+}
+.navbar .nav_links ul li.active a{
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .nav_links{
+        display: none;
+    }
+}
+.navbar .menu_hamburger{
+    display: none;
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu_hamburger{
+        display: block;
+    }
+    .nav_links{
+        position: absolute;
+        display: flex;
+        background-color: rgba(27, 26, 26, 0.804);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(6px);
+        margin-left: 100%;
+        
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar .nav_links ul li{
+        margin: 25px 0px;
+        font-size: 1.3em;
+    }
+}
+.mobile-menu{
+    margin-left: 0;
+}
+
+/* ------------ Section 1 -----------------*/
+
+.section_1{
+    width: 100%;
+    height: 12vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        .titre_home{
+            width: 100vw;
+            height: 7vh;
+            background-color: rgba(27, 26, 26, 0.804);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            box-shadow: 5px 7px 2px rgba(18, 18, 18, 0.389);
+        }
+
+/* --------------- Section 2 ----------------*/
+
+.section_2{
+    width: 90vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.081);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    left: 0;
+
+}
+    .app_choice{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+    }
+        .app_winamax{
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .bouton_wina{
+                margin-top: 75px;
+                width: 100px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                border: 0;
+            }
+        .app_youtube{
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .bouton_yt{
+                margin-top: 25px;
+                width: 100px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                border: 0;
+            }
+        .app_netflix{
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+            .bouton_netflix{
+                margin-top: 25px;
+                width: 100px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                border: 0;
+            }
+
+/* ---------- Section 3 --------------*/
+
+.section_3{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.778);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+

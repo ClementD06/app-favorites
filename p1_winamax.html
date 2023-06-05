@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_wina.css">
+    <title>Favorites Apps</title>
+</head>
+    <body>
+            <nav class="navbar_wina">
+                <a href class="logo">
+                    <img src="logo_wina.png" alt="">
+                </a>
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="index.html"> Accueil</a></li>
+                        <li><a href="p1_winamax.html"> Winamax</a></li>
+                        <li><a href="p2_youtube.html"> Youtube</a></li>
+                        <li><a href="p3_netflix.html"> Netflix</a></li>
+                    </ul>
+                </div>
+                <img src="menu-btn.png" alt="" class="menu_hamburger">
+            </nav>
+            <section class="section_1_wina">
+                <div class="titre_wina">
+                    <p>Winamax Poker</p>
+                </div>
+            </section>
+            <section class="section_2_wina">
+                <div class="app_wina">
+                    <div class="app_winamax">
+                        <img src="img_pkr_wina.png" alt="">
+                    </div>
+                    <div class="img_txt">
+                        <p>Winamax est l'une des plateformes de poker et de paris sportifs en ligne les plus populaires en France. Fondée en 1999, elle propose une large gamme de jeux de poker, des tournois excitants et une expérience de paris sportifs immersive. Avec une interface conviviale et une offre diversifiée, Winamax s'est imposée comme une référence dans le domaine.
+                            Que vous soyez un joueur débutant ou expérimenté, Winamax offre des options adaptées à tous les niveaux. Vous pouvez participer à des tournois de poker en ligne avec des joueurs du monde entier, affiner vos compétences grâce aux tables de cash game, ou encore parier sur une multitude de sports avec des cotes compétitives.
+                            En plus de sa plateforme de jeu, Winamax se démarque par son engagement envers la communauté des joueurs. La société organise régulièrement des événements et des promotions exclusives, offrant ainsi des opportunités uniques de gagner de l'argent et de vivre des expériences exceptionnelles.
+                            Winamax se distingue également par son service client réactif et professionnel, prêt à répondre à toutes les questions et préoccupations des joueurs. La sécurité des transactions et la protection des données personnelles sont des priorités pour la plateforme, assurant ainsi une expérience de jeu en ligne fiable et sécurisée.  
+                            En résumé, Winamax est bien plus qu'une simple plateforme de poker et de paris sportifs en ligne. C'est un univers dynamique et captivant où les joueurs peuvent se divertir, se mesurer aux meilleurs et tenter leur chance de remporter de grands gains, le tout dans un environnement sécurisé et convivial.</p>
+                    </div>
+                </div>
+                <div class="see_others">
+                    <div class="app_youtube">
+                        <img src="youtube-logo.png" alt="" height="250">
+                        <button class="bouton_yt_winapage">Voir</button>
+                    </div>
+                    <div class="app_netflix">
+                        <img src="logo_netflix.png" alt="" height="250">
+                        <button class="bouton_netflix_winapage">Voir</button>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="section_3_wina">     
+                    <p>© COPYRIGHT 2023 - Tous Droits Réservés - All Rights Reserved</p>
+            </section>   
+            <script>
+                const menuHamburger = document.querySelector(".menu_hamburger")
+                const navLinks = document.querySelector(".nav_links")
+        
+                menuHamburger.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu')
+                })
+            </script>
+    </body>
+</html>
